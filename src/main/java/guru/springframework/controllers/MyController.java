@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class MyController {
 
-    @Qualifier("spanishGreetingService")
+
     private GreetingService greetingService;
 
     public MyController(GreetingService greetingService) {
@@ -18,7 +18,7 @@ public class MyController {
     }
 
     public String hello(){
-        System.out.println("Hello!!! ");
+//        System.out.println("Hello!!! ");
 
         return greetingService.sayGreeting();
     }
