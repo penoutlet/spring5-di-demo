@@ -5,6 +5,7 @@ import guru.springframework.controllers.GetterInjectedController;
 import guru.springframework.controllers.MyController;
 import guru.springframework.controllers.PropertyInjectedController;
 import guru.springframework.services.PrimaryGreetingService;
+import guru.springframework.services.SpanishGreetingService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -22,6 +23,7 @@ public class DiDemoApplication {
 		System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
 		System.out.println(ctx.getBean(GetterInjectedController.class).sayHello());
 		System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
-		System.out.println(ctx.getBean(PrimaryGreetingService.class).sayGreeting());
+//		System.out.println(ctx.getBean(PrimaryGreetingService.class).sayGreeting());
+//		System.out.println(ctx.getBean((MyController.class).));
 	}
 }

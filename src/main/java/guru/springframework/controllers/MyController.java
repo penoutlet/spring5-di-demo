@@ -1,6 +1,7 @@
 package guru.springframework.controllers;
 
 import guru.springframework.services.GreetingService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class MyController {
 
+    @Qualifier("spanishGreetingService")
     private GreetingService greetingService;
 
     public MyController(GreetingService greetingService) {
